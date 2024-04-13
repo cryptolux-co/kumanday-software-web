@@ -1,0 +1,13 @@
+---
+import { ContactUsForm } from "@/components/pages/contact-us/contact-us-form";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout
+  title="Contact Us"
+  description="Contact us for any queries or to get a quote for your project"
+  bodyClassName="dark-overlay"
+  mainClassName="flex items-center justify-center"
+>
+  <ContactUsForm client:load />
+</Layout>

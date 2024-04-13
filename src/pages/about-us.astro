@@ -26,14 +26,16 @@ const cards = [
 <Layout
   title="Nosotros"
   description="Conoce más sobre nosotros"
-  mainClassName="gap-6 flex flex-col"
+  mainClassName="flex justify-center items-center"
   bodyClassName="dark-overlay"
 >
-  {
-    cards.map((card) => (
-      <AboutUsCard imgSrc={card.imgSrc} imgAlt={card.imgAlt} title={card.title}>
-        {card.description}
-      </AboutUsCard>
-    ))
-  }
+  <div class="max-w-6xl flex flex-col gap-6">
+    {
+      cards.map((card) => (
+        <AboutUsCard imgSrc={card.imgSrc} imgAlt={card.imgAlt} title={card.title}>
+          {card.description}
+        </AboutUsCard>
+      ))
+    }
+  </div>
 </Layout>
