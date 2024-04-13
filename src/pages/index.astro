@@ -1,16 +1,13 @@
 ---
+import { SlidingTitle } from "@/components/pages/index/sliding-title";
 import Layout from "@/layouts/Layout.astro";
-
-const descriptions = [""];
 ---
 
 <Layout title={"Inicio"} description={"Esta es la página de inicio"} mainClassName="flex mt-0">
   <div
-    class="flex flex-col h-full w-full my-auto text-center sm:text-start sm:self-start sm:ml-10 md:ml-14 lg:ml-20 xl:ml-32 max-w-sm"
+    class="flex flex-col h-full w-full my-auto text-center sm:text-start sm:self-start sm:ml-10 md:ml-14 lg:ml-20 xl:ml-32"
   >
     <h2 class="text-lg text-center sm:text-start lg:text-xl">Tenemos experiencia en</h2>
-    <h1 class="text-4xl text-center sm:text-start lg:text-5xl font-bold">
-      Arquitectura<br />de Sistemas
-    </h1>
+    <SlidingTitle client:load />
   </div>
 </Layout>
