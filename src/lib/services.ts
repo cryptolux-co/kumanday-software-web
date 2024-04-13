@@ -11,24 +11,25 @@ export const services = [
   {
     id: "arquitectura-de-software",
     title: "Arquitectura de Software",
-    description: null,
+    description:
+      "Diseñamos soluciones robustas y escalables, utilizando arquitecturas modernas y patrones de diseño eficientes para garantizar el rendimiento y la calidad del software.",
     imgSrc: img1,
     logo: softwareArchitectureLogo,
     content: [
       {
         title: "Arquitectura de software",
         description:
-          "Contamos con experiencia en arquitectura de microservicios, arquitectura orientada a servicios, y patrones como Modelo-Vista-Controlador.",
+          "Nuestro equipo cuenta con amplia experiencia en el diseño de arquitecturas de microservicios, arquitectura orientada a servicios (SOA) y patrones como Modelo-Vista-Controlador (MVC). Nos aseguramos de que la estructura del software sea modular, mantenible y adaptable a las necesidades de su negocio.",
       },
       {
         title: "Arquitectura de la nube",
         description:
-          "Podemos diseñar, desplegar, y gestionar proyectos en Amazon Web Services y Google Cloud Platform.",
+          "Diseñamos, desplegamos y gestionamos proyectos en plataformas líderes como Amazon Web Services (AWS) y Google Cloud Platform (GCP). Aprovechamos al máximo las capacidades de la nube para brindar soluciones escalables, seguras y de alto rendimiento.",
       },
       {
         title: "Modelado de Datos",
         description:
-          "Manejamos modelado de datos para bases de datos relacionales, almacenamiento de documentos, y mapeo de alto rendimiento.",
+          "Nuestro equipo tiene experiencia en el modelado de datos para bases de datos relacionales, almacenamiento de documentos y mapeo de alto rendimiento. Optimizamos la estructura de los datos para garantizar un acceso eficiente y un rendimiento óptimo de las aplicaciones.",
       },
     ],
   },
@@ -36,77 +37,78 @@ export const services = [
     id: "desarrollo-de-aplicaciones",
     title: "Desarrollo de Aplicaciones",
     description:
-      "Podemos desarrollar y desplegar APIs para uso interno en sistemas con arquitectura de microservicios, y para uso externo para brindar servicios web a terceros. Manejamos la autenticación, la interfaz de la capa de datos, la lógica de las reglas comerciales, la documentación, la implementación y la disponibilidad y el monitoreo del rendimiento.",
+      "Desarrollamos y desplegamos APIs robustas y seguras, tanto para uso interno en sistemas con arquitectura de microservicios, como para brindar servicios web a terceros. Nos encargamos de todo el ciclo de vida de las APIs, desde el diseño y la implementación hasta la documentación, el despliegue y el monitoreo continuo del rendimiento y la disponibilidad.",
     imgSrc: img2,
     logo: appDevelopmentLogo,
     content: [
       {
         title: "Desarrollo de Aplicaciones Web",
         description:
-          "Nuestra capacidad de diseñar soluciones enfocadas en aplicaciones web nos convierte en un gran aliado para ayudar a crecer su negocio o servicio. Desarrollamos aplicaciones web en la nube totalmente soportadas por servicios como Google Cloud y AWS.",
+          "Nos especializamos en el diseño y desarrollo de aplicaciones web innovadoras y escalables, totalmente respaldadas por servicios en la nube como Google Cloud y AWS. Nuestras soluciones están enfocadas en impulsar el crecimiento de su negocio y mejorar la experiencia de los usuarios.",
       },
       {
         title: "Ingeniería de Software",
         description:
-          "Estamos muy comprometidos con la construcción de nuestros productos y basados en nuestra experiencia e ingenio aplicamos técnicas novedosas y eficientes para el desarrollo e implementación de soluciones.",
+          "En nuestro equipo, estamos comprometidos con la excelencia en la construcción de productos de software. Basados en nuestra amplia experiencia y conocimientos técnicos, aplicamos las mejores prácticas y técnicas innovadoras para desarrollar soluciones eficientes y de alta calidad.",
       },
       {
         title: "Integración de APIs",
         description:
-          "Tenemos amplia experiencia implementando integraciones con APIs externos, públicos y privados, via REST y SOAP. Hemos realizado integraciones de APIs para suministración de datos y para gestión de procesamiento.",
+          "Contamos con una sólida trayectoria en la implementación de integraciones con APIs externas, tanto públicas como privadas, utilizando protocolos como REST y SOAP. Hemos realizado integraciones exitosas para el suministro de datos y la gestión de procesamiento, garantizando una comunicación fluida y segura entre sistemas.",
       },
     ],
   },
   {
     id: "inteligencia-artificial-y-ciencia-de-datos",
     title: "Inteligencia Artificial y Ciencia de Datos",
-    description: null,
+    description:
+      "Aprovechamos el poder de la inteligencia artificial y la ciencia de datos para extraer conocimientos valiosos y tomar decisiones informadas. Nuestro equipo de expertos combina técnicas avanzadas de análisis de datos, aprendizaje automático e IA generativa para resolver problemas complejos y obtener insights significativos.",
     imgSrc: img3,
     logo: aiAndDataScienceLogo,
     content: [
       {
         title: "Ciencia de Datos",
         description:
-          "Realizamos análisis estadísticos avanzados, explorando bancos de datos de manera científica para soportar decisiones fundamentadas por evidencia.",
+          "Nuestro equipo de científicos de datos realiza análisis estadísticos avanzados, explorando grandes volúmenes de datos de manera metódica y rigurosa. Utilizamos técnicas de minería de datos y modelado predictivo para obtener información valiosa que respalde la toma de decisiones basada en evidencia.",
       },
       {
         title: "Ingeniería de Datos",
         description:
-          "Podemos diseñar e implementar soluciones para ingerir, transformar, procesar, y analizar datos con alto rendimiento y escalamiento.",
+          "Diseñamos e implementamos soluciones robustas para la ingestión, transformación, procesamiento y análisis de datos a gran escala. Nuestras arquitecturas de datos están optimizadas para el alto rendimiento y la escalabilidad, garantizando un flujo de datos eficiente y confiable en toda la organización.",
       },
       {
         title: "Aplicación de Aprendizaje Automático",
         description:
-          "Tenemos capacidades en procesamiento de lenguaje natural, predicción, clasificación, y análisis de datos estructurados e inestructurados.",
+          "Nuestro equipo tiene amplias capacidades en el campo del aprendizaje automático, incluyendo procesamiento de lenguaje natural (NLP), modelos predictivos, algoritmos de clasificación y análisis de datos estructurados y no estructurados. Aplicamos estas técnicas para resolver problemas complejos y obtener insights accionables.",
       },
       {
         title: "Inteligencia Artificial Generativa",
         description:
-          "Estamos a la vanguardia en la comprensión, desarrollo y aplicación de herramientas de uso interactivo o programático, que aportarán importantes avances en inteligencia y conocimiento a sus soluciones.",
+          "Estamos a la vanguardia en la comprensión, desarrollo y aplicación de herramientas de IA generativa, tanto para uso interactivo como programático. Estas tecnologías revolucionarias aportarán avances significativos en inteligencia y conocimiento a sus soluciones, brindando resultados innovadores y transformadores.",
       },
     ],
   },
   {
     id: "diseño-y-presencia-digital",
     title: "Diseño y Presencia Digital",
-    description: null,
+    description: "Creamos experiencias digitales cautivadoras y memorable",
     imgSrc: img4,
     logo: designAndDigitalPresenceLogo,
     content: [
       {
         title: "Estrategia y presencia en redes sociales",
         description:
-          "Implementamos la creación de contenido atractivo con fotografía y videos para mejorar tu presencia digital y aumentar el engagement, con una gestión efectiva de redes sociales y optimización SEO. Además, analizamos los resultados para mejorar las campañas en redes sociales.",
+          "Desarrollamos e implementamos estrategias efectivas de presencia en redes sociales, generando contenido atractivo y engaging a través de fotografías y videos de alta calidad. Nuestro enfoque integral abarca desde la gestión eficiente de las redes sociales hasta la optimización SEO, asegurando un mayor alcance y visibilidad para su marca. Además, realizamos un análisis exhaustivo de los resultados para optimizar continuamente las campañas y maximizar el impacto en su audiencia objetivo.",
       },
       {
         title: "Diseño UI/UX",
         description:
-          "Diseñamos interfaces de usuario centradas en el usuario, con un enfoque en la usabilidad y la accesibilidad.",
+          "Nuestro equipo de diseñadores especializados en UI/UX crea interfaces intuitivas y atractivas, centrándose en la usabilidad y la accesibilidad. Nos aseguramos de que cada interacción del usuario sea fluida y satisfactoria, optimizando la experiencia general y fomentando la engagement con su producto o servicio.",
       },
       {
         title: "Diseño Gráfico",
         description:
-          "Creamos una imagen de marca consistente y memorable, alineada con los valores de la marca. Nuestro proceso creativo va desde la creación del logotipo, hasta la implementación de la identidad visual en materiales de marketing y lo necesario en packaging y todo lo que necesita la presencia visual de la marca.",
+          "Nuestro talentoso equipo de diseñadores gráficos trabaja en estrecha colaboración con usted para crear una identidad visual sólida y coherente, que refleje los valores y la esencia de su marca. Desde el diseño de logotipos impactantes hasta la implementación de la identidad visual en diversos materiales de marketing, packaging y cualquier otro elemento necesario para una presencia visual destacada, nos encargamos de cada detalle para asegurar una imagen de marca consistente y memorable.",
       },
     ],
   },
