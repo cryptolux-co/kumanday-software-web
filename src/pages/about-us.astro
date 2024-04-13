@@ -1,5 +1,39 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import teamImg from "@/assets/pages/about-us/team.png";
+import leonardoImg from "@/assets/pages/about-us/leonardo.png";
+import { Image } from "astro:assets";
+import AboutUsCard from "@/components/pages/about-us/AboutUsCard.astro";
+
+const cards = [
+  {
+    imgSrc: teamImg,
+    imgAlt: "Equipo de trabajo",
+    title: "Nuestro Equipo",
+    description:
+      "Lideramos con experiencia en software y datos, manteniéndonos en la vanguardia de la innovación en Inteligencia Artificial.",
+  },
+  {
+    imgSrc: leonardoImg,
+    imgAlt: "Leonardo González",
+    title: "Leonardo González",
+    description:
+      "Leonardo has more than two decades of leadership experience in the information technology industry. His specialties include data science, machine learning, software engineering, and engineering management. He enjoys working on projects involving knowledge management and predictive modeling. Leonardo founded a consulting firm where he has led teams in executing multi-million dollar projects. He has also had various consulting CTO engagements with startups and has held leadership roles in Fortune 500 companies as an architect and technical lead. In these roles, he was responsible for recruiting, training, and managing engineers.",
+  },
+];
 ---
 
-<Layout title="Sobre nosotros" description="Conoce más sobre nosotros" />
+<Layout
+  title="Nosotros"
+  description="Conoce más sobre nosotros"
+  mainClassName="gap-6 flex flex-col"
+  bodyClassName="dark-overlay"
+>
+  {
+    cards.map((card) => (
+      <AboutUsCard imgSrc={card.imgSrc} imgAlt={card.imgAlt} title={card.title}>
+        {card.description}
+      </AboutUsCard>
+    ))
+  }
+</Layout>

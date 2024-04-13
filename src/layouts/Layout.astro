@@ -2,12 +2,15 @@
 interface Props {
   title: string;
   description: string;
+  mainClassName?: string;
+  bodyClassName?: string;
 }
 
+import { cn } from "@/lib/utils";
 import Header from "./Header.astro";
 import "@/styles/globals.css";
 
-const { title, description } = Astro.props;
+const { title, description, mainClassName, bodyClassName } = Astro.props;
 ---
 
 <!doctype html>
@@ -21,13 +24,29 @@ const { title, description } = Astro.props;
     <title>{title} - Kumanday Software</title>
   </head>
 
-  <body class="min-h-screen overflow-hidden flex flex-col">
+  <body class={cn("min-h-screen flex flex-col relative", bodyClassName)}>
     <Header />
-    <slot />
+
+    <main
+      class={cn("flex-1 mt-40 px-6 md:px-12 lg:px-32 pb-16 xl:px-72 relative z-10", mainClassName)}
+    >
+      <slot />
+    </main>
   </body>
 </html>
 
 <style is:global>
+  .dark-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
   html {
     font-family: system-ui, sans-serif;
     background: #13151a;
