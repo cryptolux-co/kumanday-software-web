@@ -1,0 +1,66 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import img1 from "@/assets/pages/markets/person-writing.png";
+import img2 from "@/assets/pages/markets/img2.png";
+import img3 from "@/assets/pages/markets/img3.png";
+import img4 from "@/assets/pages/markets/img4.png";
+
+import cisco from "@/assets/pages/markets/logos/cisco.png";
+import ebay from "@/assets/pages/markets/logos/ebay.png";
+import ihme from "@/assets/pages/markets/logos/ihme.png";
+import mck from "@/assets/pages/markets/logos/mck.png";
+import nokia from "@/assets/pages/markets/logos/nokia.png";
+import paypal from "@/assets/pages/markets/logos/paypal.png";
+import s from "@/assets/pages/markets/logos/s.png";
+import sk from "@/assets/pages/markets/logos/sk.png";
+import velo from "@/assets/pages/markets/logos/velo.png";
+import yahoo from "@/assets/pages/markets/logos/yahoo.png";
+
+import { Image } from "astro:assets";
+---
+
+<Layout
+  title="Mercados"
+  description="En Data Science AI, ofrecemos soluciones de inteligencia artificial y aprendizaje automático para una variedad de mercados, incluidos los sectores de la salud, la banca, la manufactura y más. Nuestras soluciones personalizadas ayudan a las empresas a optimizar sus operaciones y tomar decisiones más informadas."
+  bodyClassName="dark-overlay"
+>
+  <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-20 xl:gap-32">
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold text-xl md:text-2xl 3xl:text-4xl">Mercados</h1>
+
+      <p class="text-lg md:text-xl 3xl:text-3xl max-w-xl">
+        Operamos en Colombia, Panamá y Estados Unidos. Co amplio espectro de empresas en diferentes
+        industrias y sectores.
+      </p>
+
+      <ul class="flex flex-col gap-1 list-disc ml-8">
+        {
+          ["Salud", "Finanzas", "Construcción", "Turismo", "Ley", "Educación"].map((market) => (
+            <li class="text-lg md:text-xl 3xl:text-2xl">{market}</li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div class="grid grid-cols-2 gap-2 select-none pointer-events-none">
+      {
+        [img1, img2, img3, img4].map((img) => (
+          <Image
+            src={img}
+            alt="Person writing on a board"
+            class="size-full 2xl:max-w-60 object-cover"
+          />
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="gap-2 flex flex-wrap items-center justify-center mt-24">
+    {
+      [cisco, ebay, ihme, mck, nokia, paypal, s, sk, velo, yahoo].map((logo) => (
+        <Image src={logo} alt="Logo" class="size-24 object-contain" />
+      ))
+    }
+  </div>
+</Layout>

@@ -28,7 +28,10 @@ const { title, description, mainClassName, bodyClassName } = Astro.props;
     <Header />
 
     <main
-      class={cn("flex-1 mt-40 px-6 md:px-12 lg:px-32 pb-16 xl:px-72 relative z-10", mainClassName)}
+      class={cn(
+        "flex-1 mt-52 px-6 md:px-12 lg:px-32 pb-16 2xl:px-52 3xl:px-72 relative z-10",
+        mainClassName
+      )}
     >
       <slot />
     </main>
