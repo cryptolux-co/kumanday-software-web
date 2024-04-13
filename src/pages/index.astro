@@ -1,9 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <h1>Index</h1>
-  </main>
+<Layout title={"Inicio"} description={"Esta es la página de inicio"}>
+  <div
+    class="flex flex-col h-full my-auto text-center self-center sm:text-start sm:self-start sm:ml-20 md:ml-24 lg:ml-40 xl:ml-72 translate-y-[-40%] max-w-sm"
+  >
+    <h2 class="text-lg lg:text-xl">Tenemos experiencia en</h2>
+    <h1 class="text-4xl lg:text-5xl font-bold">Arquitectura<br />de Sistemas</h1>
+  </div>
 </Layout>

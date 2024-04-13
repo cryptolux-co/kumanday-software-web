@@ -1,13 +1,68 @@
 ---
+import { cn } from "@/lib/utils";
+import { Image } from "astro:assets";
+import logo from "@/assets/logos/logo.svg";
+import logoText from "@/assets/logos/logo-text.svg";
+import { HamburgerMenu } from "@/components/ui/hamburger-menu";
 
+const url = Astro.url;
+const isActive = (href: string) => {
+  if (href === "/") {
+    return url.pathname === href;
+  }
+  return url.pathname.startsWith(href);
+};
+
+const routes = [
+  {
+    href: "/",
+    label: "Inicio",
+  },
+  {
+    href: "/about-us",
+    label: "Sobre nosotros",
+  },
+  {
+    href: "/markets",
+    label: "Mercados",
+  },
+  {
+    href: "/services",
+    label: "Servicios",
+  },
+  {
+    href: "/contact-us",
+    label: "Contacto",
+  },
+] satisfies Array<{
+  href: string;
+  label: string;
+}>;
 ---
 
-<nav class="flex justify-between items-center py-4 px-8 bg-transparent">
-  <a href="/" class="text-2xl font-bold">Logo</a>
+<nav class="flex justify-between items-center h-36 px-12 lg:px-6 2xl:px-24 bg-transparent">
+  <a href="/" class="flex items-center gap-4 select-none">
+    <Image src={logo} alt="Logo" class="size-12 md:size-16 lg:size-20 2xl:size-24" />
+    <Image src={logoText} alt="Logo" class="size-20 md:size-24 lg:size-28 2xl:size-40" />
+  </a>
 
-  <div class="flex items-center text-3xl gap-4">
-    <a href="/">Home</a>
-    <a href="/">About</a>
-    <a href="/">Contact</a>
+  <div class="h-full hidden lg:flex">
+    {
+      routes.map((route) => {
+        return (
+          <a
+            href={route.href}
+            class={cn(
+              "hover:bg-gradient-to-b hover:from-[#334E3C] hover:to-transparent text-sm md:text-md lg:text-lg 2xl:text-2xl px-4 lg:px-7 to-transparent flex items-center h-full",
+              isActive(route.href) && "bg-gradient-to-b from-[#334E3C] to-transparent"
+            )}
+          >
+            {route.label}
+          </a>
+        );
+      })
+    }
   </div>
+
+  <HamburgerMenu client:load routes={routes} />
 </nav>
