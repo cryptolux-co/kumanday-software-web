@@ -1,0 +1,23 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { services } from "@/lib/services";
+import { Image } from "astro:assets";
+---
+
+<Layout
+  title="Servicios"
+  description="Esta es la página de servicios"
+  mainClassName="flex items-center justify-center"
+  bodyClassName="dark-overlay"
+>
+  <div class="flex flex-wrap justify-center items-center gap-4">
+    {
+      services.map((card) => (
+        <a class="flex items-center gap-2" href={`/services/${card.id}`}>
+          <Image src={card.imgSrc} alt={card.id} class="w-72" />
+          <span class="sr-only">{card.id}</span>
+        </a>
+      ))
+    }
+  </div>
+</Layout>
